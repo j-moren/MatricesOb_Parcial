@@ -22,4 +22,28 @@ public class Metodos {
         return m;
     
     }
+    public Producto libroMasCostoso(Producto[][] matriz) {
+        if (matriz == null || matriz.length == 0 || matriz[0].length == 0) {
+            System.out.println("La Matriz está Vacia");
+            return null;
+        }    
+    
+        Producto masCostoso = matriz[0][0];
+
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                if (matriz[i][j].getPrecio() > masCostoso.getPrecio()) {
+                    masCostoso = matriz[i][j];
+                }
+            }
+        }
+    
+        System.out.println("\nEl Libro Más Costoso es:");
+        System.out.println("Titulo: " + masCostoso.getTitulo());
+        System.out.println("Autor: " + masCostoso.getAutor());
+        System.out.println("Año: " + masCostoso.getAño());
+        System.out.println("Precio: " + masCostoso.getPrecio());
+
+        return masCostoso;
+    }
 }
