@@ -21,7 +21,7 @@ public class Menu {
                 switch (opt) {
                     case 1:
                         Punto1 p1 = new Punto1();
-                        p1.P1(d, opt);
+                        p1.P1(d);
                         break;
                     case 2:
                         break;
@@ -32,9 +32,7 @@ public class Menu {
                         break;
                     case 4:
                         break;
-                    case 5:
-                        Punto5 p5 = new Punto5();
-                        p5.p5(d, opt);
+                    case 5:                                        
                         break;
                     case 6:
                         break;
