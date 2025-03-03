@@ -6,6 +6,8 @@ public class Producto {
     private int año;
     private double precio;
     private int cantidad;
+    private String nombre;
+    
 
     public Producto (){
 
@@ -49,6 +51,14 @@ public class Producto {
 
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
 }
